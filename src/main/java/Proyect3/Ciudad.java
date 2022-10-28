@@ -12,18 +12,21 @@ public class Ciudad {
     
     private String nombreCiudad;
     private String creadoCuidad;
-    private double yearCreador;
+    private int yearCreador;
+    private Provincia provincia;
 
-    public Ciudad(String nombreCiudad, String creadoCuidad, double yearCreador) {
+    public Ciudad(String nombreCiudad, String creadoCuidad, int yearCreador) {
         this.nombreCiudad = nombreCiudad;
         this.creadoCuidad = creadoCuidad;
         this.yearCreador = yearCreador;
+       
     }
     
     public String mostrarInfoCiudad(){
         var retorno = "";
         
-        retorno += "Ciudad: " + this.getNombreCiudad();
+        retorno += "Provincia: " + this.provincia.getNombreProvincia();
+        retorno += "\nCiudad: " + this.getNombreCiudad();
         retorno += "\ncreador de la ciudad:" + this.getCreadoCuidad();
         retorno += "\nYear creado: "+ this.getYearCreador();
         
@@ -47,12 +50,20 @@ public class Ciudad {
         this.creadoCuidad = creadoCuidad;
     }
 
-    public double getYearCreador() {
+    public int getYearCreador() {
         return yearCreador;
     }
 
-    public void setHabitantes(double habitantes) {
-        this.yearCreador = habitantes;
+    public void setHabitantes(int yearCreador) {
+        this.yearCreador = yearCreador;
+    }
+
+    public Provincia getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(Provincia provincia) {
+        this.provincia = provincia;
     }
     
     
