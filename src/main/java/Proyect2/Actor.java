@@ -13,14 +13,13 @@ public class Actor {
     private String nombreActor;
     private int inicioPelicula;
     private int edad;
-    Personaje interpret;
+   
     Pelicula cine;
 
-    public Actor(String nombreActor, int inicioPelicula, int edad, Personaje interpret, Pelicula cine) {
+    public Actor(String nombreActor, int inicioPelicula, int edad, Pelicula cine) {
         this.nombreActor = nombreActor;
         this.inicioPelicula = inicioPelicula;
         this.edad = edad;
-        this.interpret = interpret;
         this.cine = cine;
     }
 
@@ -59,18 +58,11 @@ public class Actor {
         this.cine = cine;
     }
 
-    public Personaje getInterpret() {
-        return interpret;
-    }
-
-    public void setInterpret(Personaje interpret) {
-        this.interpret = interpret;
-    }
-    
+   
     public String mostrarInfo(){
         
-        return " El actor de la pelicula se llama " + this.getNombreActor() + " tiene "+  this.getEdad() + " year que interpreta el personaje de " 
-                + this.interpret.getNombrePersonaje() + " donde protagoniza en la pelicula de " + this.cine.getNombrePelicula() + " su actuacion comenzo en el year "
+        return " El actor de la pelicula se llama " + this.getNombreActor() + " tiene "+  this.getEdad() + " year " 
+                +  " donde protagoniza en la pelicula de " + this.cine.getNombrePelicula() + " su actuacion comenzo en el year "
                 + this.getInicioPelicula();
         
     }

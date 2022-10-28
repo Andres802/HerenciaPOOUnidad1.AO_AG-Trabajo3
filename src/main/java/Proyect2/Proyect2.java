@@ -18,7 +18,7 @@ public class Proyect2 {
         
         var personaje = new Personaje("Peter Paker", pelicula);
         
-        var actor = new Actor("Tom Holland",2010,15,personaje,pelicula);
+        var actor = new Actor("Tom Holland",2010,15,pelicula);
          
         //---------------------------------------------------------------------------//
         
@@ -26,14 +26,14 @@ public class Proyect2 {
         
         var personaje1 = new Personaje("Dominic Toretto", pelicula1);
         
-        var actor1 = new Actor("Vin Diesel",1998,40,personaje1,pelicula1);
+        var actor1 = new Actor("Vin Diesel",1998,40,pelicula1);
         //------------------------------------------------------------------------------//
         
         var pelicula2 = new Pelicula("Guason",2019,"Bill Camp",3);
         
         var personaje2 = new Personaje("Joker", pelicula2);
         
-        var actor2 = new Actor("Todd Phillips",1978,50,personaje2,pelicula2);
+        var actor2 = new Actor("Todd Phillips",1978,50,pelicula2);
         
         //----------------------------------------------------------------------------//
         
